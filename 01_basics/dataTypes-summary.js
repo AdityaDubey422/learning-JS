@@ -40,3 +40,30 @@ const myFunction = function () {
   console.log("Hello World");
 };
 console.log(typeof myFunction);
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive) (jab bhi stack memories use hoti hai to jo bhi ham variable define karte hai hame uski copy milti hai) ,
+
+//Heap (Non-Primitive) (jab bhi kuch heap memory ke andar chala jaata hai to hame milta hai uska reference(original value ka) to ham jo bhi change karenge vo original value me bhi change hoga)
+
+let myYoutubeName = "shubhDubey.com";
+let anotherName = myYoutubeName;
+anotherName = "hello.com"
+
+console.log(myYoutubeName); //shubhDubey.com
+console.log(anotherName); // hello.com
+
+let userOne = {
+  email : "user@google.com",
+  upi : "user@ybl",
+};
+
+let userTwo = userOne;
+userTwo.email = "hello@google.com"
+
+console.log(userOne);
+console.log(userTwo);
+
+
