@@ -27,19 +27,19 @@ console.log(id === anotherId); // false(because symbol is used for uniqueness)
 // Array , Objects , Functions
 
 let heroes = ["thor", "spiderman", "superman"];
-console.log(typeof heroes);
+console.log(typeof heroes); // object
 
 const car = {
   type: "Fiat",
   model: "500",
   color: "white",
 };
-console.log(typeof car);
+console.log(typeof car); // object
 
 const myFunction = function () {
   console.log("Hello World");
 };
-console.log(typeof myFunction);
+console.log(typeof myFunction); // function(actually me its a object function)
 
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -63,7 +63,7 @@ let userOne = {
 let userTwo = userOne;
 userTwo.email = "hello@google.com"
 
-console.log(userOne);
-console.log(userTwo);
+console.log(userOne);  //{ email: 'hello@google.com', upi: 'user@ybl' }
+console.log(userTwo); //{ email: 'hello@google.com', upi: 'user@ybl' }
 
 
