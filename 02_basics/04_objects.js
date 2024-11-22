@@ -28,27 +28,27 @@ const obj2 = { 3: "c", 4: "d" };
 // const obj3 = Object.assign({}, obj1, obj2);
 // console.log(obj3); //{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 
-const obj3 = {...obj1,...obj2};
+const obj3 = { ...obj1, ...obj2 };
 console.log(obj3); //{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 
 const users = [
-    {
-        id: 1,
-        email : "hello@google.com"
-    },
-    {
-        id: 1,
-        email : "hello@google.com"
-    },
-    {
-        id: 1,
-        email : "hello@google.com"
-    },
-    {
-        id: 1,
-        email : "hello@google.com"
-    },
-]
+  {
+    id: 1,
+    email: "hello@google.com",
+  },
+  {
+    id: 1,
+    email: "hello@google.com",
+  },
+  {
+    id: 1,
+    email: "hello@google.com",
+  },
+  {
+    id: 1,
+    email: "hello@google.com",
+  },
+];
 console.log(users[0].email);
 
 console.log(tinderUser);
@@ -58,3 +58,21 @@ console.log(Object.entries(tinderUser)); //[ [ 'id', '123abc' ], [ 'name', 'Samm
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn")); // true (ye check karega ki tinderUser pe isLoggedIn naam ki property hai ya nahi)
 
+// ++++++++++++++++++ Object de structure ++++++++++++++++++++===
+const course = {
+  coursename: "JS in hindi",
+  coursePrice: "999",
+  courseInstructor: "Hitesh Sir",
+};
+
+const { courseInstructor: instructor } = course;
+console.log(instructor); // hitesh sir
+
+// JSON (java script object notation)(its nit limited to JS ye puri API industry me chalta hai chahe php ho rubyrails etc)
+// API hame kaise milegi
+// {
+//     "name": "hitesh",
+//     "coursename": "Js in hindi",
+//     "price": "free",
+// };
+[{}, {}, {}];
