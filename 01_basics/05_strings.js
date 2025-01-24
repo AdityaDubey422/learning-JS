@@ -12,7 +12,7 @@ console.log(gameName.__proto__); //{}
 
 console.log(gameName.length); //11
 console.log(gameName.toUpperCase()); //SHUBH DUBEY
-console.log(gameName.charAt(0)); // S (charAt cant takr negative index(matlab backward counting nahi kar sakta) ad jab bhi isme index out of range hoga to ye empty string return karega) 
+console.log(gameName.charAt(0)); // S (charAt cant take negative index(matlab backward counting nahi kar sakta) and jab bhi isme index out of range hoga to ye empty string return karega) 
 console.log(gameName.at(-1));// y (at accepts negative index and jab isme index out of range jaayega to it returns undefined)
 
 console.log(gameName.indexOf("D")); //6
@@ -21,7 +21,7 @@ const newString = gameName.substring(0,4); // substring ke andar negative value 
 console.log(newString); // Shub(4 is exclusive)
 
 const anotherString = gameName.slice(-8,4); // -8 matlab piche se 8va number
-console.log(anotherString);
+console.log(anotherString); // b
 
 const newString1 = "     Shubh     ";
 console.log(newString1.trim()); // Shubh(removes starting and ending spaces)

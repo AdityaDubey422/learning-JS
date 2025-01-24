@@ -68,7 +68,7 @@ const course = {
 const { courseInstructor: instructor } = course;
 console.log(instructor); // hitesh sir
 
-// JSON (java script object notation)(its nit limited to JS ye puri API industry me chalta hai chahe php ho rubyrails etc)
+// JSON (java script object notation)(its not limited to JS ye puri API industry me chalta hai chahe php ho rubyrails etc)
 // API hame kaise milegi
 // {
 //     "name": "hitesh",

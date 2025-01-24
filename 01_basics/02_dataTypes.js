@@ -9,9 +9,9 @@ let state;
 
 // number => 2^53
 // bigint 
-// string => "" or ''
+// string => "" or '' or ''' ''' (teen waala multi line string ke liye)
 // boolean => true/false
-// null=> standalone value
+// null => standalone value
 // undefined => abhi value assign nahi hui hai
 // symbol => unique
 

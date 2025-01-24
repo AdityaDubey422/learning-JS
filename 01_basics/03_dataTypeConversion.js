@@ -12,7 +12,15 @@ let scoreInNumber = Number(score);
 console.log(typeof scoreInNumber); //number
 console.log(scoreInNumber); // Nan(not a number)
 
+let emptyString = ""
+console.log(emptyString); // String
+
 // ye sab dikkate isiliye hoti hai js me because ye itna stricutly chijo check ni karta thats why log typescript use hoti hai
+
+let emptyStringInNumber = Number(emptyString);
+console.log(typeof emptyStringInNumber); //number
+console.log(emptyStringInNumber); // 0
+
 
 let score2 = undefined;
 console.log(typeof score2); //undefined
@@ -73,7 +81,7 @@ let isLoggedIn4 = undefined;
 
 let booleanIsLoggedIn4 = Boolean(isLoggedIn4);
 console.log(typeof booleanIsLoggedIn4); // boolean
-console.log(booleanIsLoggedIn4); //true
+console.log(booleanIsLoggedIn4); //false
 
 //Bollean Conveter
 // 1 or any number other than 0 => true
@@ -84,11 +92,11 @@ console.log(booleanIsLoggedIn4); //true
 // undefined => false
 
 let someNumber = 33;
-console.log(someNumber);
+console.log(someNumber); // 33
 
 let stringNumber = String(someNumber);
-console.log(typeof stringNumber);
-console.log(stringNumber);
+console.log(typeof stringNumber); // String
+console.log(stringNumber); // 33
 
 
 

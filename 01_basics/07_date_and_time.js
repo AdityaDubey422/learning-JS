@@ -7,7 +7,7 @@ console.log(myDate.toDateString()); //Sun Nov 17 2024
 console.log(myDate.toLocaleString()); // 11/17/2024, 8:11:44 PM
 console.log(myDate.toLocaleDateString()); // 11/17/2024
 console.log(myDate.toISOString()); //2024-11-17T20:11:44.415Z
-console.log(myDate.toJSON()); // //2024-11-17T20:11:44.415Z
+console.log(myDate.toJSON()); // 2024-11-17T20:11:44.415Z
 
 console.log(typeof myDate); // Object
 
@@ -16,11 +16,12 @@ console.log(myCreateDate); //2023-01-23T05:03:00.000Z
 console.log(myCreateDate.toString()); //Mon Jan 23 2023 05:03:00 GMT+0000 (Coordinated Universal Time)
 
 let myCreateDate1 = new Date("01-14-2023");
+console.log(myCreateDate1); // 2023-01-14T00:00:00.000Z
 console.log(myCreateDate1.toString()); //Sat Jan 14 2023 00:00:00 GMT+0000 (Coordinated Universal Time)
 
 let myTimeStamp = Date.now();
 console.log(myTimeStamp); // millisecond me time dega(mdn padh lo)
-console.log(Math.floor(Date.now() / 1000)); // concverting to seconfs
+console.log(Math.floor(Date.now() / 1000)); // converting to seconds
 
 let newdate = new Date();
 console.log(newdate.getDay()); // 0(sunday)

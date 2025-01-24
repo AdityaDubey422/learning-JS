@@ -11,7 +11,7 @@ console.log(myArray); // [0,1,2,3,4,5,6]
 myArray.pop();
 console.log(myArray); // [0,1,2,3,4,5]
 
-myArray.unshift(9); // ham isse generally use nahi karte because firts position pe add karne ke wajeh se ye sabke index ki aisi taisi kar deta hai ....but ha agar jaruri he hai use karna to kar lo
+myArray.unshift(9); // ham isse generally use nahi karte because first position pe add karne ke wajeh se ye sabke index ki aisi taisi kar deta hai ....but ha agar jaruri he hai use karna to kar lo
 console.log(myArray); //[9,0,1,2,3,4,5]
 
 myArray.shift();
@@ -31,7 +31,7 @@ console.log(typeof newArray); // string
 
 console.log("A ", myArray); //A  [ 0, 1, 2, 3, 4, 5 ]
 
-const myn1 = myArray.slice(1, 3); //Returns a copy of a section of an array. For both start and end, a negative index can be used to indicate an offset from the end of the array. For example, -2 refers to the second to last element of the array.@param start The beginning index of the specified portion of the array. If start is undefined, then the slice begins at index 0.@param end The end index of the specified portion of the array. This is exclusive of the element at the index 'end'. If end is undefined, then the slice extends to the end of the array.
+const myn1 = myArray.slice(1, 3); // Returns a copy of a section of an array. For both start and end, a negative index can be used to indicate an offset from the end of the array. For example, -2 refers to the second to last element of the array.@param start The beginning index of the specified portion of the array. If start is undefined, then the slice begins at index 0.@param end The end index of the specified portion of the array. This is exclusive of the element at the index 'end'. If end is undefined, then the slice extends to the end of the array.
 console.log(myn1); //[ 1, 2 ]
 console.log("B ", myArray); //B  [ 0, 1, 2, 3, 4, 5 ]
 

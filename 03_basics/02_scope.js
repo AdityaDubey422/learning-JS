@@ -13,6 +13,7 @@ console.table([a, b]);
 //     const element = array[index];
 // }
 
+// ++++++++++++++ Hoisting Lecture ++++++++++++++++++
 function one() {
   const username = "aditya";
 
@@ -20,7 +21,7 @@ function one() {
     const website = "youtube";
     console.log(username);
   }
-  //   console.log(website);
+  // console.log(website);
   two();
 }
 one(); // aditya
@@ -29,7 +30,7 @@ if (true) {
   const username = "aditya";
   if (username === "aditya") {
     const website = " youtube";
-    console.log(username + website); // aditya youtbbe
+    console.log(username + website); // aditya youtube
   }
   //   console.log(website); //not defined
 }
@@ -43,8 +44,8 @@ function addone(num) {
 }
 
 console.log(addTwo(5)); // eror (cannot accces addTwo before initialization)
-const addTwo = function(num) {
-    return num + 2;
-}
+const addTwo = function (num) {
+  return num + 2;
+};
 
 

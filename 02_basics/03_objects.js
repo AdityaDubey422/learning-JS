@@ -22,7 +22,7 @@ console.log(JsUser[mySym]); // mykey1
 JsUser.isLoggedIn = true;
 console.log(JsUser);
 
-JsUser.greeting = function () {
+JsUser.greeting = () => {
   console.log("Hello JS User");
 };
 
@@ -38,5 +38,5 @@ console.log(JsUser.greetingTwo()); //Hello JS User, Aditya
 
 
 Object.freeze(JsUser); // hamne Jsuser naam ke object ko freeze kar diya to ab uske keys ki value ham nahi badal payyenge
-JsUser.email = "aditya@microsoft.com"; // yaha error nahi aaya but jab print karoge to you will gnna see ki value change nahi hui hai because hamne freeze kar diya hai object ko
+JsUser.email = "aditya@microsoft.com"; // yaha error nahi aaya but jab print karoge to you will gonna see ki value change nahi hui hai because hamne freeze kar diya hai object ko
 console.log(JsUser.email); // aditya@google.com

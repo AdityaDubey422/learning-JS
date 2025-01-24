@@ -8,7 +8,7 @@ let accountState
 
 accountEmail = "hc@hc.com"
 accountName = "hello"
-accountName = "Bengaluru"
+accountCity = "Bengaluru"
 
 console.table([accountId, accountEmail, accountName, accountCity,accountState])
 

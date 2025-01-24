@@ -36,7 +36,7 @@ function updatedLoginUserMessage(username) {
     return `${username} just logged in`;
   }
 }
-console.log(updatedLoginUserMessage()); //undefined just logged in
+console.log(updatedLoginUserMessage()); //please enter a username
 console.log(updatedLoginUserMessage("Aditya")); //Aditya just logged in
 
 function calculateCartPrice(...num1) {
