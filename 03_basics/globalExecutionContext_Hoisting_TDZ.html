@@ -1,0 +1,26 @@
+<!-- TDZ : Temporal Dead Zone -->
+ <a href="https://youtu.be/gPKzwAORly8?si=weAZ9Fe259Wg9psQ"></a>
+
+<!-- JS execution context is the environment in which JS code is executed , Every execution context have two phases :-
+
+ i) Memory Creation Phase : In this phase , JS engine line by line code padhta hai and saare variables and function ko memory allocate karta hai,one thing to note is jab JS engine variables ko store karta hai in memory phase to vo unki definition initally store nahi karta , thats why starting me saare variables ki value undefined hoti hai , but but but vo function ki definition store karta hai...thats why agar ham function ko call karte hai even before defining it...to vo fnction chal jaata hai
+
+
+ ii) Code Execution Phase : In this phase , again JS engine again shuruat se line by line code padhta hai,and jo bhi execution hona hota hai vo issi phase me hota hai,and issi phase me line by line variables ki jo bhi definition jo bhi value hai vo unko milti hai
+
+ -->
+
+ <!-- Ab dekho ek hota hai Global execution context jo ki script run karte he sabse phele ban jaata hai...and then isme memory phase chalta hai pura and then code excution phase chalta hai...ab maan lo code execute ho raha hai,ho raha hai hote hote beech me hamne ek function ko call kara(defined already uppar kar chuke hai function ko) to ham jaise he function ko call karte hai na to again ek execution context banta usme again memory phase banta hai again usme code execution phase hota hai..and then function end hone ke baad ye function ka execution code delete ho jaata hai..aise he karte karte pura code execute ho jaata hai..and pura code execute hone ke baad(jo ki global execution content ke andar ho raha tha ) global execution context bhi delete ho jaata hai -->
+
+
+
+ <!-- Ab yahi jo concept hai ki variables and function declaration pehle ho jaata hai memory phase me sab..and then code execute hona shuru hota hai jiski wajeh se ham ham variables and function ko ham use kar sakte hai before they are declared...iss pure concept ko hoisiting kehte hai -->
+
+
+
+ <!-- Ab dekho agar mai tumse puchu maine first line me likha console.log(x) and second line me likha var x = 10 , to isko run karke output kya aayega..so your answer will be undefined which is correct yayyyyyy-->
+
+<!-- Ab maine first line me agian console.log(x) likha and second line me let x = 10, to isko run kara and pucha output kya aaygea..answer will be ReferenceError aa jaayega and it will say Cannot acces 'x' before initialization .....that means var hoist hota hai and let and const hoist nahi aata .....no you are again wrong, let and const bhi hoist hote hai,tabhi to error ye nahi aaya ki x is not defined...ye error aaya ki we xannot acces it before initialization.....ohhh ab samajh aaya...but fir agar let and const bhi hoist hota hai to ham usko acces kyu nahi kar sakte....tabhi to let and const ko banaya gaya hai instead of var...jaaki vo before initizaliation acces na ho paaye....let and const jiss bhi line pe declare kare jaate hai na to uss line ke uppar tum agar uss let and const ko acces karne ki kosish karoge to nahi hoga...because usss line ke uppar ek temporal dead zone ban jaayega that means tumm uss pure zone me uss particular let and const ko acces nahi kar sakte...so now you know what is temporal dead zone -->
+<!-- geeks for geeks definition : The Temporal Dead Zone (TDZ) is a concept in JavaScript that relates to the hoisting of the variables and the visibility of variables declared with let and const. In the TDZ, a variable exists but it cannot be accessed until it is not declared. This prevents the variable from being used or accessed before a value is assigned to it.
+
+To avoid TDZ issues, it's important to declare variables before trying to access it. It serves as a mechanism to catch potential issues where a variable is accessed before its declaration, promoting cleaner and more predictable code. Understanding TDZ helps to write code that follows the best practices and also reduces the probability of runtime errors in JavaScript.  -->
