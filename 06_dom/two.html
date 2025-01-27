@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: #0D1117;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <!-- This is a comment -->
+        <div class="day">Monday <span>hello</span> </div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parentDiv = document.querySelector(".parent")
+    console.log(parentDiv.children)
+    console.log(parentDiv.children[1].innerHTML)
+
+    Array.from(parentDiv.children).forEach((childrenDiv)=> console.log(childrenDiv))
+    parentDiv.children[1].style.color = "orange"
+    console.log(parentDiv.firstElementChild);
+    console.log(parentDiv.lastElementChild);
+
+    const dayOne = document.querySelector(".day");
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+
+    console.log(parentDiv.childNodes);
+    
+</script>
+</html>
